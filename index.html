@@ -495,7 +495,8 @@ footer{position:relative;z-index:1;background:var(--ink);padding:65px 40px 45px;
 ═══════════════════════════ */
 @media(max-width:860px){
   .hero-inner{grid-template-columns:1fr;padding:110px 24px 80px;text-align:center}
-  .hero-visual{display:none}
+  .hero-visual{display:flex;justify-content:center;order:-1;margin-bottom:10px}
+  .hero-photo-wrap{max-width:200px}
   .hero-tagline,.power-section{margin-left:auto;margin-right:auto}
   .hero-cta{justify-content:center}
   nav{padding:14px 20px}
@@ -560,7 +561,7 @@ footer{position:relative;z-index:1;background:var(--ink);padding:65px 40px 45px;
   </div>
   <div class="hero-inner">
     <div class="hero-text">
-      <div class="hero-eyebrow">⚡ Guerrero Sayajin de Élite · Nivel: SUPREMO ⚡</div>
+      <div class="hero-eyebrow"> Guerrero Sayajin de Élite · Nivel: SUPREMO </div>
       <h1 class="hero-main">
         <span class="hm-1">¡Feliz</span>
         <span class="hm-2">Cumpleaños</span>
@@ -699,7 +700,7 @@ footer{position:relative;z-index:1;background:var(--ink);padding:65px 40px 45px;
 
 <section class="section" id="recuerdos">
   <div class="sec-label">📦 ABRE CADA UNO</div>
-  <h2 class="sec-title reveal">Razones por las que te amo</h2>
+  <h2 class="sec-title reveal">Cosas de las que me enamoraron</h2>
   <p class="sec-sub reveal">Toca cada tarjeta para descubrir un momento especial… 💛</p>
   <div class="recuerdos-grid" id="recuerdosGrid"></div>
 </section>
@@ -741,7 +742,7 @@ footer{position:relative;z-index:1;background:var(--ink);padding:65px 40px 45px;
       <p class="carta-sub">Para Missa, mi guerrero SayaJin en su día más especial</p>
       <div class="carta-rule"></div>
       <div class="carta-body">
-        <p>Amoooooorsssss,</p>
+        <p>Missa,</p>
         <p>Hoy el universo entero celebra que existes. Como todo buen guerrero Sayajin, tu poder crece con cada batalla, con cada amanecer, con cada momento que decides ser tú. Pero lo que más me enamora no es tu fuerza, sino la ternura infinita que escondes detrás de esa mirada.</p>
         <p>Eres mi persona favorita en todo el mundo mi amor, el que me hace reír hasta las lágrimas, el que me cuida sin que lo pida, el que aparece justo cuando más lo necesito. Gracias por cada aventura que hemos vivido juntos, por cada batalla que enfrentamos de la mano, y por cada momento tranquilo que hace que todo valga la pena.</p>
         <p>Que este año te traiga todo el ki que mereces, noches de pleno descanso, amaneceres llenos de calma, y esa sensación de que el mundo está de tu lado. Yo siempre lo estaré, nunca lo olvides mi amor.</p>
@@ -750,7 +751,7 @@ footer{position:relative;z-index:1;background:var(--ink);padding:65px 40px 45px;
         <p class="carta-firma"><strong>Tu oshita bella</strong>Con amor, siempre y para siempre.</p>
       </div>
       <div class="fotos-block">
-        <h3 class="fotos-heading">Nuestros Momentos Románticos, en seri gracias por todos</h3>
+        <h3 class="fotos-heading">Nuestros Momentos Románticos, Gracias por todos</h3>
         <div class="fotos-grid" id="fotosGrid"></div>
       </div>
     </div>
@@ -994,7 +995,7 @@ function calcPoder(){
 
 /* CAJA DE RECUERDOS */
 const RECUERDOS=[
-  {ico:'👀',front:'La Vez que te ví sin saco',back:'Ese día que cambió todo. La comida, la música, tú… ya sabía que ibas a ser especial.',date:'El principio 💛'},
+  {ico:'👀',front:'La vez que te ví sin saco',back:'Ese día que cambió todo, tú… ya sabía que ibas a ser especial.',date:'El principio 💛'},
   {ico:'📱',front:'Nuestros primeros mensajes de amor...',back:'Quedarnos despiertos hablando de tonterías de adolescentes. Esos momentos no tienen precio.',date:'Una noche mágica ✨'},
   {ico:'🎬',front:'Caminar juntos de regreso',back:'Media hora más contigo aparte de la escuela, era perfecto, te tenía más cerca.',date:'Semana perfecta'},
   {ico:'🌧️',front:'La Lluvia Inesperada',back:'Nos sorprendió la lluvia y terminamos corriendo, riéndonos. Mojados pero felices.',date:'Aventura improvisada ☔'},
